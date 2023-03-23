@@ -1,0 +1,14 @@
+{% extends 'main_app/base.html' %}
+
+{% block body %}
+<h3>Book Detail</h3>
+
+{% if book == 0 %}
+<h3>Invalid book hash</h3>
+{% else %}
+<h3>{{book.name}}</h3>
+<h4>{{book.author}}</h4>
+{% endif %}
+
+
+{% endblock %}
